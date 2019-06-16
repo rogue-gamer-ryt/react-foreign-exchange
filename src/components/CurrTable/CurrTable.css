@@ -1,0 +1,35 @@
+.table-container {
+  border-collapse: collapse;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tableRow {
+  border: 2px solid #3ba3fb;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 30px;
+  color: #3ba3fb;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.currName {
+  width: 70%;
+  padding-left: 30px;
+}
+
+.currRate {
+  padding-right: 25px;
+  float: right;
+  align-items: center;
+  margin-right: 0px;
+  margin-left: 2%;
+}
+
+.curr-diff {
+  float: right;
+}
+
+

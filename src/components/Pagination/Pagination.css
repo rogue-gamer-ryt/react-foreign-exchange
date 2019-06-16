@@ -1,0 +1,30 @@
+.pagination-arrow {
+  text-decoration: none;
+  color: #1b66e0;
+  padding: 8px 16px;
+}
+.pagination .active-page {
+  color: #1b66e0;
+}
+.pagination .inactive-page {
+  color: #7bc0ff;
+}
+
+.pagination a:hover:not(.active-page) {
+  color: #1b66e0;
+}
+.pagination a {
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pagination .arrow-disable {
+  cursor: no-drop;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}

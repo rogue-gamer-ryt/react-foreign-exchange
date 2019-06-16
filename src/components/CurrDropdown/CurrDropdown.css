@@ -1,0 +1,50 @@
+.dropDown {
+  float: left;
+  margin: auto;
+}
+
+select {
+  background-color: white;
+  border: thin solid #4286f4;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.2em 8em 0.2em 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+.dropbtn {
+  background-image: linear-gradient(45deg, transparent 50%, #ffffff 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #4286f4, #4286f4);
+  background-position: calc(100% - 20px) calc(0.8em + 2px),
+    calc(100% - 16px) calc(0.8em + 2px), 100% 0;
+  background-size: 4px 4px, 4px 4px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dropbtn:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 0.85em, calc(100% - 20px) 0.85em,
+    100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+@media (max-width: 500px) {
+  select {
+    padding: 0.4em 19em 0.4em 1em;
+  }
+}

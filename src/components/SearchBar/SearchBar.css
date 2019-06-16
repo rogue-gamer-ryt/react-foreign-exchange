@@ -1,0 +1,33 @@
+.searchbar {
+  float: right;
+  background: #4286f4;
+  margin: auto;
+  margin-right: 10px;
+}
+
+.search-text-input {
+  border: thin solid #4286f4;
+  float: left;
+  height: 17px;
+  background: #f1f9ff;
+  margin: 0;
+  outline: 0;
+  padding: 0.5em 0 0.4em 0.6em;
+  width: 183px;
+  -webkit-text-fill-color: #a8b8c5;
+}
+i {
+  color: white;
+  padding-top: 7px;
+  padding-right: 7px;
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .search-text-input {
+    padding: 0.8em 9.5em 0.8em 0.7em;
+  }
+  .searchbar {
+    margin-top: 10px;
+  }
+}

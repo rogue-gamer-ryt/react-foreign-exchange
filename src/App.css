@@ -1,0 +1,12 @@
+.AppBody {
+  flex-direction: column;
+  margin-top: 65px;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .tableOperations {
+    display: flex;
+    flex-direction: column;
+  }
+}
