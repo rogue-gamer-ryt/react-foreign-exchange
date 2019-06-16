@@ -11,7 +11,7 @@ export default function Pagination(props) {
     e.preventDefault();
     var prevPageNum;
     if (props.currPageNum != 1) {
-      prevPageNum = props.currPageNum - 1;
+      prevPageNum = parseInt(props.currPageNum) - 1;
       props.handlePageChange(prevPageNum);
     }
   };
@@ -19,9 +19,12 @@ export default function Pagination(props) {
     e.preventDefault();
     var nextPageNum;
     const { totalCount, countPerPage } = props;
+    console.log("PAGINATION NEXT: ", totalCount, countPerPage);
     var pageCount = Math.ceil(totalCount / countPerPage);
-    if (props.currPageNum !== pageCount) {
-      nextPageNum = props.currPageNum + 1;
+    if (props.currPageNum != pageCount) {
+      console.log("PAGINATION CURRENT PAGE NUM", props.currPageNum);
+      nextPageNum = parseInt(props.currPageNum) + 1;
+      console.log("PAGINATION NXT PAGE NUM", nextPageNum);
       props.handlePageChange(nextPageNum);
     }
   };
