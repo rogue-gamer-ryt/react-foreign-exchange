@@ -19,18 +19,15 @@ export default function Pagination(props) {
     e.preventDefault();
     var nextPageNum;
     const { totalCount, countPerPage } = props;
-    console.log("PAGINATION NEXT: ", totalCount, countPerPage);
+
     var pageCount = Math.ceil(totalCount / countPerPage);
     if (props.currPageNum != pageCount) {
-      console.log("PAGINATION CURRENT PAGE NUM", props.currPageNum);
       nextPageNum = parseInt(props.currPageNum) + 1;
-      console.log("PAGINATION NXT PAGE NUM", nextPageNum);
       props.handlePageChange(nextPageNum);
     }
   };
 
   const createPagination = () => {
-    console.log("createPagination: ", props);
     const { totalCount, countPerPage } = props;
     var pageCount = Math.ceil(totalCount / countPerPage);
     var pages = [];

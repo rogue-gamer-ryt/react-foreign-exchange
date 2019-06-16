@@ -4,7 +4,6 @@ import { getDate } from "../../utility";
 
 export default function CurrDropdown(props) {
   const getOptions = () => {
-    console.log("Calling getOptions: ", props);
     var options = [];
     if (props.result && Object.keys(props.result.rates)) {
       var currencies = props.result.rates;

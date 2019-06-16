@@ -56,7 +56,6 @@ class CurrTable extends React.Component {
   };
 
   setTableData = pageNumber => {
-    console.log("setTableData: ", pageNumber);
     let rows = [];
     let tempArray = [...this.props.paginationData.allData];
     let ul = pageNumber * this.props.paginationData.countPerPage;
@@ -67,12 +66,9 @@ class CurrTable extends React.Component {
       rows = tempArray.slice(ll);
     }
     this.props.setCurrentData(rows);
-    console.log("Printing props in setTableData: ", this.props);
   };
 
   tableGenerator = () => {
-    console.log("tableGenerator");
-    console.log(this.props.currData);
     var rows = [];
     if (
       this.props.paginationData.currPageData.length > 0 &&
@@ -82,7 +78,7 @@ class CurrTable extends React.Component {
       var rates = this.props.paginationData.currPageData;
       var oldRates = this.props.currData.resultOldData.rates;
       oldRates = oldRates[Object.keys(oldRates)[0]];
-      console.log("rates " + rates + "base " + base);
+
       rates.forEach(rate => {
         rows.push(
           <div key={rate.currencyName} className="tableRow">
@@ -109,8 +105,6 @@ class CurrTable extends React.Component {
   };
 
   render() {
-    console.log("Props: ", this.props);
-
     return (
       <div>
         <div className="table-container">{this.tableGenerator()}</div>
