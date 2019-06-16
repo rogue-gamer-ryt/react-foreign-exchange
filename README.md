@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Foreign Exchange using React & Redux
+
+You can get the foreign exchange rates of various currencies.<br>
+The application is deployed at https://rogue-gamer-ryt.github.io/react-foreign-exchange/
+
 ## Available Scripts
 
 In the project directory, you can run:
